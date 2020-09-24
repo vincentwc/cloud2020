@@ -4,12 +4,14 @@ import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import com.atguigu.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
 @RestController
 @Slf4j
+@EnableEurekaClient
 public class PaymentController {
 
     @Resource
